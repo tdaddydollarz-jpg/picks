@@ -1,11 +1,13 @@
 name: Upload to App Store
+
 on:
   push:
-    branches: [ main ] # This triggers the upload when you push to the main branch
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: macos-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -13,10 +15,12 @@ jobs:
       - name: Upload IPA to TestFlight
         uses: apple-actions/upload-testflight-build@v1
         with:
-          app-path: 'path/to/your/app.ipa' # Change this to where your IPA is located
-          issuer-id: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
-          api-key-id: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
-          api-key-content: ${{ secrets.APP_STORE_CONNECT_KEY }}
-APP_STORE_CONNECT_ISSUER_ID
-APP_STORE_CONNECT_KEY_ID
-APP_STORE_CONNECT_KEY 
+          app-path: ios-2.117896.2\ \(2\).ipa
+          issuer-id: ${{ 7b772343-a94b-4c82-8019-4ef7e4e70f38 }}
+          api-key-id: ${{ VL592D9JB6}}
+          api-private-key: import { createClient } from '@base44/sdk';
+
+const base44 = createClient({
+  appId: "69e72292447f4b8a0c6fd562",
+  headers: {
+    "api_key": "c51e8b7f1afc4b8c82d1e655578e18f4"
