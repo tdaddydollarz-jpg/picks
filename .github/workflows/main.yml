@@ -15,12 +15,13 @@ jobs:
       - name: Upload IPA to TestFlight
         uses: apple-actions/upload-testflight-build@v1
         with:
-          app-path: ios-2.117896.2\ \(2\).ipa
+          app-path: app.ipa
           issuer-id: ${{ 7b772343-a94b-4c82-8019-4ef7e4e70f38 }}
           api-key-id: ${{ VL592D9JB6}}
-          api-private-key: import { createClient } from '@base44/sdk';
-
-const base44 = createClient({
-  appId: "69e72292447f4b8a0c6fd562",
-  headers: {
-    "api_key": "c51e8b7f1afc4b8c82d1e655578e18f4"
+          api-private-key:
+-----BEGIN PRIVATE KEY-----
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg4waS24x3G9io3Jop
+IQPwVYO7w0XSpabEioJunz1rPF2gCgYIKoZIzj0DAQehRANCAASN3VtrZ7BKLjGk
++we6kyxhPfqvJyB4k0aGM3VeXbcWqhzSM4JZ+VNagIRToDHE0B35bpjyJ/bxa+5y
+XzPjJR1b
+-----END PRIVATE KEY-----
