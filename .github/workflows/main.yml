@@ -18,8 +18,7 @@ jobs:
           app-path: app.ipa
           issuer-id: ${{ 7b772343-a94b-4c82-8019-4ef7e4e70f38 }}
           api-key-id: ${{ VL592D9JB6}}
-          api-private-key:
------BEGIN PRIVATE KEY-----
+          api-private-key: -----BEGIN PRIVATE KEY-----
 MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg4waS24x3G9io3Jop
 IQPwVYO7w0XSpabEioJunz1rPF2gCgYIKoZIzj0DAQehRANCAASN3VtrZ7BKLjGk
 +we6kyxhPfqvJyB4k0aGM3VeXbcWqhzSM4JZ+VNagIRToDHE0B35bpjyJ/bxa+5y
